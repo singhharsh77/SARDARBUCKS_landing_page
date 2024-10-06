@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://www.starbucks.com/weblx/images/rewards/rewards-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: #006341;
+            margin-bottom: 1.5rem;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .login-container button {
+            background-color: #006341;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #004d2b;
+        }
+
+        .login-container .forgot-password {
+            color: #006341;
+            margin-top: 1rem;
+            display: block;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .login-container .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .login-container .signup {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .login-container .signup a {
+            color: #006341;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-container .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Sardarbucks Coffee</h1>
+        <form>
+            <input type="text" placeholder="Email or Username" required>
+            <input type="password" placeholder="Password" required>
+            <button onclick="openNewTab()">Login</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+        <div class="signup">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+    <script>
+        function openNewTab() {
+            window.open('index.html', '_blank');
+        }
+    </script>
+</body>
+</html>
